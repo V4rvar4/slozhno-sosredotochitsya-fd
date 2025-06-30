@@ -5,12 +5,33 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #FF8DCB;
+  --title-decor: #FF8DCB;
+  --color-menu-decor: #353430;
+  --title-section: #353430;
+  --paragraf-color: #353430;
+  --text-color: #353430;
+  --title-color: #FFC2E6;
+  --color-hover: #32312D66;
+  --link-border-color: #353430;
+  --page-background-image: url('../images/cover-image-light.png');
+  --page-background-color: #FFF1F7;
+  --rec: hidden;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: #FF8DCB;
+  --title-decor: #FF8DCB;
+  --color-menu-decor: #353430;
+  --title-section: #353430;
+  --paragraf-color: #353430;
+  --text-color: #353430;
+  --title-color: #FFC2E6;
+  --color-hover: #32312D66;
+  --link-border-color: #353430;
+  --page-background-image: url('../images/cover-image-light.png');
+  --page-background-color: #FFF1F7;
+  --rec: hidden;
+  }
 }
